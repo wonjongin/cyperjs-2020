@@ -1,0 +1,22 @@
+{
+  "name": "@joing/cyperjs",
+  "version": "0.0.1",
+  "description": "Convert string to cyper!",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonjongin/cyperjs-2020.git"
+  },
+  "keywords": [
+    "cyper"
+  ],
+  "author": "WonJongin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonjongin/cyperjs-2020/issues"
+  },
+  "homepage": "https://github.com/wonjongin/cyperjs-2020#readme"
+}
