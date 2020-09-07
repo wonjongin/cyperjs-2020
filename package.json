@@ -1,7 +1,7 @@
 {
   "name": "@joing/cyperjs",
   "version": "0.0.1",
-  "description": "Convert string to cyper!",
+  "description": "Convert string to cyper, cyper to string!",
   "main": "app.js",
   "scripts": {
     "test": "node app.js"
@@ -13,10 +13,21 @@
   "keywords": [
     "cyper"
   ],
+  "bin": {
+    "cyper": "./app.js"
+  },
+  "preferGlobal": true,
   "author": "WonJongin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wonjongin/cyperjs-2020/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-progress": "^3.8.2",
+    "clipboardy": "^2.3.0",
+    "commander": "^6.0.0",
+    "inquirer": "^7.3.3"
   },
   "homepage": "https://github.com/wonjongin/cyperjs-2020#readme"
 }
