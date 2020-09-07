@@ -4,8 +4,17 @@ Encrypte and Decrypte in CLI!!
 SHA-1, SHA-256, SHA-512, AES-128, AES-256
 ![ex_intro](./img/exintro.png)
 ## 📥 Installation
+### npm
 ```
 npm install -g @joing/cyperjs
+```
+### yarn
+```
+yarn global add @joing/cyperjs
+```
+### npx (It is not install)
+```
+npx @joing/cyperjs
 ```
 ## ⌨️ Usage 
 Just Type "cyper"!!
@@ -16,11 +25,14 @@ Options:
   -v, --version  output the version number
   -h, --help     display help for command
 ```
+### Intro example
 ![ex_intro](./img/exintro.png)
-▲ Intro example
+
+### SHA example
 ![ex_sha](./img/exsha.png)
-▲ SHA example
+
+### AES encryption example
 ![ex_sha](./img/exaes.png)
-▲ AES encryption example
+
+### AES decryption example
 ![ex_sha](./img/exaesde.png)
-▲ AES decryption example
