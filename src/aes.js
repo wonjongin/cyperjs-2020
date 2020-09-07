@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const cliProgress = require("cli-progress");
 const clipboardy = require("clipboardy");
+const resoutput = require("./result");
 
 function aes(v) {
   //진행바
@@ -22,7 +23,7 @@ function aes(v) {
   );
   //암호화
   const encryptaes = (string, k) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait..."));
+    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
     bare.start(5, 0);
     var system = "aes" + v;
     bare.update(1);
@@ -36,12 +37,11 @@ function aes(v) {
     bare.update(5);
     bare.stop();
     console.log("");
-    console.log("result: " + output);
-    console.log("Result is copied to clipboard");
+    resoutput(output);
   };
   //복호화
   const decryptaes = (string, k) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait..."));
+    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
     bard.start(5, 0);
     var system = "aes" + v;
     bard.update(1);
@@ -56,8 +56,7 @@ function aes(v) {
       bard.update(5);
       bard.stop();
       console.log("");
-      console.log("result: " + outputd);
-      console.log("Result is copied to clipboard");
+      resoutput(outputd);
     } catch (err) {
       bard.stop();
       console.log("❌ Password or String is incorrect! ❌");

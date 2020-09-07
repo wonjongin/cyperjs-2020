@@ -29,7 +29,7 @@ const order = () => {
       },
     ])
     .then((answer) => {
-      console.log(chalk.rgb(128, 128, 128)(answer.order + " is selected"));
+      console.log(chalk.gray(answer.order + " is selected."));
       if (answer.order == ordermsg[0]) {
         sha(1);
       } else if (answer.order == ordermsg[1]) {
@@ -56,7 +56,7 @@ commander
   //   .option("-e, --email [email]", "이메일", "account")
   .action(function (count) {
     console.log(
-      chalk.rgb(128, 128, 128)("cyper cli ver. " + ver + ' | type "help"')
+      chalk.rgb(128, 128, 128)("cyper cli ver. " + ver + ' | type "cyper"')
     );
     order();
   })

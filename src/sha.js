@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const cliProgress = require("cli-progress");
 const clipboardy = require("clipboardy");
+const resoutput = require("./result");
 
 function sha(v) {
   const bar1 = new cliProgress.SingleBar(
@@ -13,7 +14,7 @@ function sha(v) {
   );
 
   const cryptsha = (string) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait... 🔒"));
+    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
     bar1.start(5, 0);
     var system = "sha" + v;
     bar1.update(1);
@@ -27,8 +28,7 @@ function sha(v) {
     bar1.update(5);
     bar1.stop();
     console.log("");
-    console.log("result: " + output);
-    console.log("Result is copied to clipboard");
+    resoutput(output);
   };
   const shaq = () => {
     inquirer

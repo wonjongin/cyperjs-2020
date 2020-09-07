@@ -1,6 +1,6 @@
 {
   "name": "@joing/cyperjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert string to cyper, cyper to string!",
   "main": "app.js",
   "scripts": {
