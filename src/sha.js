@@ -14,7 +14,7 @@ function sha(v) {
   );
 
   const cryptsha = (string) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
+    console.log(chalk.gray("Please wait... ⏱\n"));
     bar1.start(5, 0);
     var system = "sha" + v;
     bar1.update(1);

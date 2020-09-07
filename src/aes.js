@@ -23,7 +23,7 @@ function aes(v) {
   );
   //암호화
   const encryptaes = (string, k) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
+    console.log(chalk.gray("Please wait... ⏱\n"));
     bare.start(5, 0);
     var system = "aes" + v;
     bare.update(1);
@@ -41,7 +41,7 @@ function aes(v) {
   };
   //복호화
   const decryptaes = (string, k) => {
-    console.log(chalk.rgb(128, 128, 128)("Please wait... ⏱\n"));
+    console.log(chalk.gray("Please wait... ⏱\n"));
     bard.start(5, 0);
     var system = "aes" + v;
     bard.update(1);
