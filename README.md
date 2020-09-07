@@ -21,6 +21,6 @@ Options:
 ![ex_sha](./img/exsha.png)
 ▲ SHA example
 ![ex_sha](./img/exaes.png)
-▲ AES encrtyption example
+▲ AES encryption example
 ![ex_sha](./img/exaesde.png)
-▲ AES decrtyption example
+▲ AES decryption example
