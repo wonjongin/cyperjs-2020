@@ -49,14 +49,19 @@ function aes(v) {
     bard.update(2);
     deciper.update(string, "base64", "utf8");
     bard.update(3);
-    var outputd = deciper.final("utf8");
-    bard.update(4);
-    clipboardy.writeSync(outputd);
-    bard.update(5);
-    bard.stop();
-    console.log("");
-    console.log("result: " + outputd);
-    console.log("Result is copied to clipboard");
+    try {
+      var outputd = deciper.final("utf8");
+      bard.update(4);
+      clipboardy.writeSync(outputd);
+      bard.update(5);
+      bard.stop();
+      console.log("");
+      console.log("result: " + outputd);
+      console.log("Result is copied to clipboard");
+    } catch (err) {
+      bard.stop();
+      console.log("❌ Password or String is incorrect! ❌");
+    }
   };
   const ec = () => {
     inquirer

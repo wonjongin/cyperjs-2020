@@ -1,11 +1,7 @@
 # 🔐 cyper.js
 Encrypte and Decrypte in CLI!!
 ## 📝 Features
-SHA-1
-SHA-256
-SHA-512
-AES-128
-AES-256
+SHA-1, SHA-256, SHA-512, AES-128, AES-256
 ## 📥 Installation
 ```
 npm install -g @joing/cyperjs
