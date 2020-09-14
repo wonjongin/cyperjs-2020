@@ -4,6 +4,8 @@ Encrypte and Decrypte in CLI!!
 SHA-1, SHA-256, SHA-512, AES-128, AES-256
 ![ex_intro](./img/exintro.png)
 ## 📥 Installation
+### Download to install
+[Click Here](https://github.com/wonjongin/cyperjs-2020/releases)
 ### npm
 ```
 npm install -g @joing/cyperjs
